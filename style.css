@@ -4,4 +4,10 @@
   font-weight: 300;
   font-style: normal;
 }
-
+.dark {
+  background-color: black;
+  color: white;
+}
+.display {
+  display: none;
+}

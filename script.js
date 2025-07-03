@@ -17,10 +17,58 @@ const menuBtn = document.getElementById('menu-btn');
 
   // popup menu
   setTimeout(()=> {
-const popup = document.getElementById("popup");
+const popup = document.getElementById("register");
 popup.style.display = "block";
   },
    10000
 )
+
+// register function
+document.getElementById("register").addEventListener("submit",(e)=> {
+    e.preventDefault();
+const popup = document.getElementById("register");
+    // get value
+    const name = document.getElementById("name").value; //get name
+    const namePrint = document.getElementById("namePrint") //name error print
+    const emailPrint = document.getElementById("emailPrint") //email error print
+    const passwordPrint = document.getElementById("passwordPrint") //password error print
+    const CpasswordPrint = document.getElementById("CpasswordPrint") //confirm password error print
+    const email = document.getElementById("email").value; //get email
+    const password = document.getElementById("password").value; //get password 
+    const Cpassword = document.getElementById("Cpassword").value; //cheak password with previous type password
+
+    // condition for name input
+    if(name.length < 4 || name.length > 15) {
+      namePrint.innerText = "Please enter a username between 4 to 15 characters.";
+      return;
+    } else {
+        namePrint.innerText = "";
+    }
+    if(email.length < 1) {
+        emailPrint.innerText = "Please enter your email."
+        return;
+    } else {
+        emailPrint.innerText = "";
+    }
+    if(password.length < 6) {
+        passwordPrint.innerText = "Please enter upto '6' degit password."
+        return;
+    } else {
+        passwordPrint.innerText = "";
+    }
+    if(Cpassword.length < 6) {
+        CpasswordPrint.innerText = "Please confirm your password."
+        return;
+    } else {
+        CpasswordPrint.innerText = "";
+    }
+    if(password != Cpassword) {
+        passwordPrint.innerText = "Mismatch password!";
+        CpasswordPrint.innerText = "Mismatch password!";
+        return;
+    } else {
+        popup.style.display = "none";
+    }
+})
 // for animation
 AOS.init();

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- scroll animation cdn -->
-     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
@@ -46,13 +46,17 @@
                 <a class="transition-all duration-700 hover:bg-black/50 rounded-full px-4 py-2 hover:text-white text-[#D6FF2C] font-bold text-lg"
                     href="#review">Review</a>
 
-                    <!-- dark and light mode -->
-                     <button>
-                        <svg class="w-6 h-6 hover:text-white text-[#D6FF2C]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-  <path fill-rule="evenodd" d="M11.675 2.015a.998.998 0 0 0-.403.011C6.09 2.4 2 6.722 2 12c0 5.523 4.477 10 10 10 4.356 0 8.058-2.784 9.43-6.667a1 1 0 0 0-1.02-1.33c-.08.006-.105.005-.127.005h-.001l-.028-.002A5.227 5.227 0 0 0 20 14a8 8 0 0 1-8-8c0-.952.121-1.752.404-2.558a.996.996 0 0 0 .096-.428V3a1 1 0 0 0-.825-.985Z" clip-rule="evenodd"/>
-</svg>
+                <!-- dark and light mode -->
+                <button>
+                    <svg class="w-6 h-6 hover:text-white text-[#D6FF2C]" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                            d="M11.675 2.015a.998.998 0 0 0-.403.011C6.09 2.4 2 6.722 2 12c0 5.523 4.477 10 10 10 4.356 0 8.058-2.784 9.43-6.667a1 1 0 0 0-1.02-1.33c-.08.006-.105.005-.127.005h-.001l-.028-.002A5.227 5.227 0 0 0 20 14a8 8 0 0 1-8-8c0-.952.121-1.752.404-2.558a.996.996 0 0 0 .096-.428V3a1 1 0 0 0-.825-.985Z"
+                            clip-rule="evenodd" />
+                    </svg>
 
-                     </button>
+                </button>
             </div>
 
             <!-- Mobile Menu Button -->
@@ -68,13 +72,17 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu"
                 class="col-span-3 md:hidden max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease pl-4 font-bold text-xl">
-                 <!-- dark and light mode -->
-                     <button id="mode">
-                        <svg class="w-6 h-6 hover:text-white text-[#D6FF2C]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-  <path fill-rule="evenodd" d="M11.675 2.015a.998.998 0 0 0-.403.011C6.09 2.4 2 6.722 2 12c0 5.523 4.477 10 10 10 4.356 0 8.058-2.784 9.43-6.667a1 1 0 0 0-1.02-1.33c-.08.006-.105.005-.127.005h-.001l-.028-.002A5.227 5.227 0 0 0 20 14a8 8 0 0 1-8-8c0-.952.121-1.752.404-2.558a.996.996 0 0 0 .096-.428V3a1 1 0 0 0-.825-.985Z" clip-rule="evenodd"/>
-</svg>
+                <!-- dark and light mode -->
+                <button id="mode">
+                    <svg class="w-6 h-6 hover:text-white text-[#D6FF2C]" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                            d="M11.675 2.015a.998.998 0 0 0-.403.011C6.09 2.4 2 6.722 2 12c0 5.523 4.477 10 10 10 4.356 0 8.058-2.784 9.43-6.667a1 1 0 0 0-1.02-1.33c-.08.006-.105.005-.127.005h-.001l-.028-.002A5.227 5.227 0 0 0 20 14a8 8 0 0 1-8-8c0-.952.121-1.752.404-2.558a.996.996 0 0 0 .096-.428V3a1 1 0 0 0-.825-.985Z"
+                            clip-rule="evenodd" />
+                    </svg>
 
-                     </button>
+                </button>
 
                 <a href="#home"
                     class="block py-2 hover:text-white text-[#D6FF2C] transition-all duration-300 hover:pl-2">Home</a>
@@ -82,7 +90,7 @@
                     class="block py-2 hover:text-white text-[#D6FF2C] transition-all duration-300 hover:pl-2">About</a>
                 <a href="#plants"
                     class="block py-2 hover:text-white text-[#D6FF2C] transition-all duration-300 hover:pl-2">Plants</a>
-                <a href="#contact"
+                <a href="#review"
                     class="block py-2 hover:text-white text-[#D6FF2C] transition-all duration-300 hover:pl-2 pb-5">Review</a>
             </div>
         </nav>
@@ -312,90 +320,279 @@
 
         <!-- plants section -->
 
-        <section id="plants" class="px-4 py-25 bg-[#0D5230] w-full h-full py-10 text-white">
+        <section id="plants" class="px-4 bg-[#0D5230] w-full h-full py-10 text-white">
 
             <!-- about plant text section -->
-             <div class="py-10 flex flex-col justify-center items-center">
+            <div class="py-10 flex flex-col justify-center items-center" data-aos="fade-up" data-aos-duration="3000">
                 <h1 class="text-[#D6FF2C] text-[3rem] font font-bold">About us</h1>
                 <p class="text-[#FFAC5C] text-sm">Here we suggested best home plant's for you.</p>
-             </div>
+            </div>
 
             <!-- content 1 -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-10 py-10">
-    <!-- photo  -->
- <div class="flex justify-center" data-aos="fade-right">
-    <img class="h-100" src="./asset/photo1.png">
- </div>
- <div class="" data-aos="fade-left">
-    <h1 class="text-[#D6FF2C] text-3xl font font-bold p-5">Make your <span class="text-[#FFAC5C]">organic</span><br>garden.</h1>
-    <p class="text-sm font font-bold ml-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique non ratione voluptates eveniet aliquid, libero sint illum quasi fuga possimus eaque quia enim natus consequatur ullam provident ipsum neque odit. Nemo voluptatibus enim neque, asperiores ratione sequi omnis laudantium error id nesciunt facere eum maxime labore quas rem tempore tempora!
-    </p>
- </div>
-</div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 py-10">
+                <!-- photo  -->
+                <div class="flex justify-center" data-aos="fade-right">
+                    <img class="h-100" src="./asset/photo1.png">
+                </div>
+                <div class="" data-aos="fade-left">
+                    <h1 class="text-[#D6FF2C] text-3xl font font-bold p-5">Make your <span
+                            class="text-[#FFAC5C]">organic</span><br>garden.</h1>
+                    <p class="text-sm font font-bold ml-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique non ratione voluptates
+                        eveniet aliquid, libero sint illum quasi fuga possimus eaque quia enim natus consequatur ullam
+                        provident ipsum neque odit. Nemo voluptatibus enim neque, asperiores ratione sequi omnis
+                        laudantium error id nesciunt facere eum maxime labore quas rem tempore tempora!
+                    </p>
+                </div>
+            </div>
 
-<!-- content 2 -->
- <div class="grid grid-cols-1 md:grid-cols-2 gap-10 py-10">
-    
- <div class="" data-aos="fade-right">
-    <h1 class="text-[#D6FF2C] text-3xl font font-bold p-5">Make your <span class="text-[#FFAC5C]">organic</span><br>garden.</h1>
-    <p class="text-sm font font-bold ml-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique non ratione voluptates eveniet aliquid, libero sint illum quasi fuga possimus eaque quia enim natus consequatur ullam provident ipsum neque odit. Nemo voluptatibus enim neque, asperiores ratione sequi omnis laudantium error id nesciunt facere eum maxime labore quas rem tempore tempora!
-    </p>
- </div>
+            <!-- content 2 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 py-10">
 
- <!-- photo  -->
- <div class="flex justify-center" data-aos="fade-left">
-    <img class="h-100" src="./asset/photo2.png">
- </div>
-</div>
+                <div class="" data-aos="fade-right">
+                    <h1 class="text-[#D6FF2C] text-3xl font font-bold p-5">Make your <span
+                            class="text-[#FFAC5C]">organic</span><br>garden.</h1>
+                    <p class="text-sm font font-bold ml-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique non ratione voluptates
+                        eveniet aliquid, libero sint illum quasi fuga possimus eaque quia enim natus consequatur ullam
+                        provident ipsum neque odit. Nemo voluptatibus enim neque, asperiores ratione sequi omnis
+                        laudantium error id nesciunt facere eum maxime labore quas rem tempore tempora!
+                    </p>
+                </div>
 
-<!-- content 3 -->
- <div class="grid grid-cols-1 md:grid-cols-2 gap-10 py-10">
-    <!-- photo -->
- <div class="flex justify-center" data-aos="fade-right">
-    <img class="h-100" src="./asset/photo3.png">
- </div>
- <div class="" data-aos="fade-left">
-    <h1 class="text-[#D6FF2C] text-3xl font font-bold p-5">Make your <span class="text-[#FFAC5C]">organic</span><br>garden.</h1>
-    <p class="text-sm font font-bold ml-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique non ratione voluptates eveniet aliquid, libero sint illum quasi fuga possimus eaque quia enim natus consequatur ullam provident ipsum neque odit. Nemo voluptatibus enim neque, asperiores ratione sequi omnis laudantium error id nesciunt facere eum maxime labore quas rem tempore tempora!
-    </p>
- </div>
-</div>
+                <!-- photo  -->
+                <div class="flex justify-center" data-aos="fade-left">
+                    <img class="h-100" src="./asset/photo2.png">
+                </div>
+            </div>
 
-<!-- content 4 -->
- <div class="grid grid-cols-1 md:grid-cols-2 gap-10 py-10">
-
- <div class="" data-aos="fade-right">
-    <h1 class="text-[#D6FF2C] text-3xl font font-bold p-5">Make your <span class="text-[#FFAC5C]">organic</span><br>garden.</h1>
-    <p class="text-sm font font-bold ml-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique non ratione voluptates eveniet aliquid, libero sint illum quasi fuga possimus eaque quia enim natus consequatur ullam provident ipsum neque odit. Nemo voluptatibus enim neque, asperiores ratione sequi omnis laudantium error id nesciunt facere eum maxime labore quas rem tempore tempora!
-    </p>
- </div>
-     <!-- photo -->
- <div class="flex justify-center" data-aos="fade-left">
-    <img class="h-100" src="./asset/photo4.png">
- </div>
-</div>
-
-<!-- content 5 -->
- <div class="grid grid-cols-1 md:grid-cols-2 gap-10 py-10">
-    <!-- photo 1 -->
- <div class="flex justify-center" data-aos="fade-right">
-    <img class="h-100" src="./asset/photo5.png">
- </div>
- <div class="" data-aos="fade-left">
-    <h1 class="text-[#D6FF2C] text-3xl font font-bold p-5">Make your <span class="text-[#FFAC5C]">organic</span><br>garden.</h1>
-    <p class="text-sm font font-bold ml-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique non ratione voluptates eveniet aliquid, libero sint illum quasi fuga possimus eaque quia enim natus consequatur ullam provident ipsum neque odit. Nemo voluptatibus enim neque, asperiores ratione sequi omnis laudantium error id nesciunt facere eum maxime labore quas rem tempore tempora!
-    </p>
- </div>
-</div>
+            <!-- content 3 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 py-10">
+                <!-- photo -->
+                <div class="flex justify-center" data-aos="fade-right">
+                    <img class="h-100" src="./asset/photo3.png">
+                </div>
+                <div class="" data-aos="fade-left">
+                    <h1 class="text-[#D6FF2C] text-3xl font font-bold p-5">Make your <span
+                            class="text-[#FFAC5C]">organic</span><br>garden.</h1>
+                    <p class="text-sm font font-bold ml-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique non ratione voluptates
+                        eveniet aliquid, libero sint illum quasi fuga possimus eaque quia enim natus consequatur ullam
+                        provident ipsum neque odit. Nemo voluptatibus enim neque, asperiores ratione sequi omnis
+                        laudantium error id nesciunt facere eum maxime labore quas rem tempore tempora!
+                    </p>
+                </div>
+            </div>
 
         </section>
 
-        <!--  -->
+        <!-- review section -->
+        <section id="review" class="px-4 bg-[#0D5230] w-full h-full py-10 text-white mt-1">
+
+            <!-- review text section -->
+            <div class="py-10 flex flex-col justify-center items-center" data-aos="fade-up" data-aos-duration="3000">
+                <h1 class="text-[#FFAC5C] text-[3rem] font font-bold">Review's</h1>
+                <p class="text-[#D6FF2C] text-sm">You can see our customer review's.</p>
+            </div>
+
+            <!-- for reviews content conrainer -->
+            <div class="grid grid-cols-1 md:grid-cols-3 px-4 py-10 gap-5">
+
+                <!-- review 1 -->
+                <div class="bg-[rgb(0,0,0,0.5)] rounded-lg px-4 py-2" data-aos="fade-right">
+
+                    <!-- review text -->
+                    <div>
+                        <p class="text-[#D6FF2C] text-sm font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, ipsa? Iste officia iure animi
+                            eius voluptates, id aliquid velit alias, recusandae, amet illo error esse?</p>
+                    </div>
+                    <!-- customer profile -->
+                    <div class="py-5 flex justify-between items-center">
+
+                        <!-- profile -->
+                        <div class="flex items-center gap-5">
+                            <!-- profile image -->
+                            <div class="h-10 w-10 rounded-full bg-[#fff9] p-2">
+                                <img src="" alt="">
+                            </div>
+
+                            <!-- profile name -->
+                            <div class="flex items-center items-center text-[#FFAC5C]">
+                                <p class="text-3xl">Mr_Rahul009</p>
+                            </div>
+                        </div>
+
+                        <!-- for dots -->
+                        <div>
+                            <p class="text-xl font-bold">❜❜</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- review 2 -->
+                <div class="bg-[rgb(0,0,0,0.5)] rounded-lg px-4 py-2" data-aos="zoom-in-up">
+
+                    <!-- review text -->
+                    <div>
+                        <p class="text-[#D6FF2C] text-sm font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, ipsa? Iste officia iure animi
+                            eius voluptates, id aliquid velit alias, recusandae, amet illo error esse?</p>
+                    </div>
+                    <!-- customer profile -->
+                    <div class="py-5 flex justify-between items-center">
+
+                        <!-- profile -->
+                        <div class="flex items-center gap-5">
+                            <!-- profile image -->
+                            <div class="h-10 w-10 rounded-full bg-[#fff9] p-2">
+                                <img src="" alt="">
+                            </div>
+
+                            <!-- profile name -->
+                            <div class="flex items-center items-center text-[#FFAC5C]">
+                                <p class="text-xl font-bold">Mr_Rahul009</p>
+                            </div>
+                        </div>
+
+                        <!-- for dots -->
+                        <div>
+                            <p class="text-3xl">❜❜</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- review 3 -->
+                <div class="bg-[rgb(0,0,0,0.5)] rounded-lg px-4 py-2" data-aos="fade-left">
+
+                    <!-- review text -->
+                    <div>
+                        <p class="text-[#D6FF2C] text-sm font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, ipsa? Iste officia iure animi
+                            eius voluptates, id aliquid velit alias, recusandae, amet illo error esse?</p>
+                    </div>
+                    <!-- customer profile -->
+                    <div class="py-5 flex justify-between items-center">
+
+                        <!-- profile -->
+                        <div class="flex items-center gap-5">
+                            <!-- profile image -->
+                            <div class="h-10 w-10 rounded-full bg-[#fff9] p-2">
+                                <img src="" alt="">
+                            </div>
+
+                            <!-- profile name -->
+                            <div class="flex items-center items-center text-[#FFAC5C]">
+                                <p class="text-xl font-bold">Mr_Rahul009</p>
+                            </div>
+                        </div>
+
+                        <!-- for dots -->
+                        <div>
+                            <p class="text-3xl">❜❜</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- review 4 -->
+                <div class="bg-[rgb(0,0,0,0.5)] rounded-lg px-4 py-2" data-aos="fade-right">
+
+                    <!-- review text -->
+                    <div>
+                        <p class="text-[#D6FF2C] text-sm font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, ipsa? Iste officia iure animi
+                            eius voluptates, id aliquid velit alias, recusandae, amet illo error esse?</p>
+                    </div>
+                    <!-- customer profile -->
+                    <div class="py-5 flex justify-between items-center">
+
+                        <!-- profile -->
+                        <div class="flex items-center gap-5">
+                            <!-- profile image -->
+                            <div class="h-10 w-10 rounded-full bg-[#fff9] p-2">
+                                <img src="" alt="">
+                            </div>
+
+                            <!-- profile name -->
+                            <div class="flex items-center items-center text-[#FFAC5C]">
+                                <p class="text-xl font-bold">Mr_Rahul009</p>
+                            </div>
+                        </div>
+
+                        <!-- for dots -->
+                        <div>
+                            <p class="text-3xl">❜❜</p>
+                        </div>
+
+                    </div>
+                </div>
+
+<!-- review 5 -->
+                <div class="bg-[rgb(0,0,0,0.5)] rounded-lg px-4 py-2" data-aos="zoom-in-up">
+
+                    <!-- review text -->
+                    <div>
+                        <p class="text-[#D6FF2C] text-sm font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, ipsa? Iste officia iure animi
+                            eius voluptates, id aliquid velit alias, recusandae, amet illo error esse?</p>
+                    </div>
+                    <!-- customer profile -->
+                    <div class="py-5 flex justify-between items-center">
+
+                        <!-- profile -->
+                        <div class="flex items-center gap-5">
+                            <!-- profile image -->
+                            <div class="h-10 w-10 rounded-full bg-[#fff9] p-2">
+                                <img src="" alt="">
+                            </div>
+
+                            <!-- profile name -->
+                            <div class="flex items-center items-center text-[#FFAC5C]">
+                                <p class="text-xl font-bold">Mr_Rahul009</p>
+                            </div>
+                        </div>
+
+                        <!-- for dots -->
+                        <div>
+                            <p class="text-3xl">❜❜</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- review 6 -->
+                <div class="bg-[rgb(0,0,0,0.5)] rounded-lg px-4 py-2" data-aos="fade-left">
+
+                    <!-- review text -->
+                    <div>
+                        <p class="text-[#D6FF2C] text-sm font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, ipsa? Iste officia iure animi
+                            eius voluptates, id aliquid velit alias, recusandae, amet illo error esse?</p>
+                    </div>
+                    <!-- customer profile -->
+                    <div class="py-5 flex justify-between items-center">
+
+                        <!-- profile -->
+                        <div class="flex items-center gap-5">
+                            <!-- profile image -->
+                            <div class="h-10 w-10 rounded-full bg-[#fff9] p-2">
+                                <img src="" alt="">
+                            </div>
+
+                            <!-- profile name -->
+                            <div class="flex items-center items-center text-[#FFAC5C]">
+                                <p class="text-xl font-bold">Mr_Rahul009</p>
+                            </div>
+                        </div>
+
+                        <!-- for dots -->
+                        <div>
+                            <p class="text-3xl">❜❜</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
 
     </section>
     <!-- javascript link -->

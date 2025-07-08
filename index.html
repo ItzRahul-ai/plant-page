@@ -402,53 +402,80 @@
             </div>
 
             <!-- product chart section -->
-            <div class="px-4 py-2 shadow-sm shadow-[#008F2B] rounded-lg mt-5"data-aos="zoom-out-up">
+            <div class="px-4 py-2 shadow-sm shadow-[#008F2B] rounded-lg mt-5">
 
                 <div class="grid grid-cols-2 md:grid-cols-1 gap-5">
 
                     <!-- table head -->
-                    <div class="text-[#008F2B] font-bold text-xl grid grid-cols-1 md:grid-cols-5 md:gap-2 gap-5">
-                        <h1 class="text-left md:text-center mb-20 md:mb-0">product</h1>
-                        <h1 class="text-left md:text-center">price</h1>
-                        <h1 class="text-left md:text-center">sku</h1>
-                        <h1 class="text-left md:text-center">quantity</h1>
-                        <h1 class="text-left md:text-center">subtotal</h1>
+                    <div class="text-[#008F2B] font-bold text-xl grid grid-cols-1 md:grid-cols-5 md:gap-0 gap-5 ">
+                        <h1 class="text-left md:text-center mb-20 md:mb-0 pb-5" data-aos="fade-down">product</h1>
+                        <h1 class="text-left md:text-center md:border-b border-[#00C23A] pb-2" data-aos="zoom-in">price
+                        </h1>
+                        <h1 class="text-left md:text-center md:border-b border-[#00C23A] pb-2" data-aos="zoom-in">sku
+                        </h1>
+                        <h1 class="text-left md:text-center md:border-b border-[#00C23A] pb-2" data-aos="zoom-in">
+                            quantity</h1>
+                        <h1 class="text-left md:text-center md:border-b border-[#00C23A] pb-2" data-aos="zoom-in">
+                            subtotal</h1>
                     </div>
 
                     <!-- table body -->
                     <div class="text-[#00C23A] font-bold grid grid-cols-1 md:grid-cols-5 md:gap-2 gap-5">
 
                         <!-- product image -->
-                        <div class="flex justify-center">
+                        <div class="flex justify-center " data-aos="zoom-in">
                             <img src="./asset/product.jpeg" alt="product" class="h-30 md:h-50">
                         </div>
                         <!-- product price -->
-                        <div class="text-center md:mt-15">
+                        <div class="text-center md:mt-15" data-aos="zoom-in-down">
                             <span id="productPrice"></span>
+
+                            <!-- coupon code box -->
+                            <div class="relative w-full lg:w-4/5 hidden md:block mt-15">
+                                <input class="outline-none border border-[#00C23A] rounded-lg pl-4 pr-16 py-1 w-full"
+                                    type="text" name="coupon" id="coupon" placeholder="Coupon No">
+                                <button type="submit"
+                                    class="absolute right-0 cursor-pointer top-1/2 -translate-y-1/2 px-4 py-1 text-white bg-[#00C23A] rounded-lg text-sm md:text-base">
+                                    OK
+                                </button>
+                            </div>
+
                         </div>
                         <!-- product unic no / sku -->
-                        <div class="text-center md:mt-15">
+                        <div class="text-center md:mt-15" data-aos="zoom-in-down">
                             <span>0987654321</span>
                         </div>
-                       <div class="flex flex-col items-center">
-                         <!-- product quentity select -->
-                        <div class="text-center md:mt-15">
-                            <!-- quentity reduce -->
-                            <button id="reduce" type="submit" class="text-white bg-[#008F2B] rounded-lg px-5 font-bold text-lg cursor-pointer">-</button>
+                        <div class="flex flex-col items-center">
+                            <!-- product quentity select -->
+                            <div class="text-center md:mt-15" data-aos="zoom-in-down">
+                                <!-- quentity reduce -->
+                                <button id="reduce" type="submit"
+                                    class="text-white bg-[#008F2B] rounded-lg px-5 font-bold text-lg cursor-pointer">-</button>
 
-                            <!-- quentity no -->
-                             <span id="productCount" class="px-2">1</span>
+                                <!-- quentity no -->
+                                <span id="productCount" class="px-2">1</span>
 
-                             <!-- quantity addition -->
-                            <button id="increse" type="submit" class="text-white bg-[#008F2B] rounded-lg px-5 font-bold text-lg cursor-pointer">+</button>
-                       </div>
-                       <span class="text-sm text-rose-600 font font-bold" id="print"></span>
+                                <!-- quantity addition -->
+                                <button id="increse" type="submit"
+                                    class="text-white bg-[#008F2B] rounded-lg px-5 font-bold text-lg cursor-pointer">+</button>
+                            </div>
+                            <span class="text-sm text-rose-600 font font-bold" id="print"></span>
                         </div>
                         <!-- total product price -->
-                        <div class="text-center md:mt-15">
+                        <div class="text-center md:mt-15" data-aos="zoom-in-down">
                             <span id="finalPrice"></span>
                         </div>
+
                     </div>
+                     <!-- coupon code box -->
+                        <div class="relative w-4/5 md:hidden block mt-2 mb-5">
+                                <input class="outline-none border border-[#00C23A] rounded-lg pl-4 pr-16 py-1 w-full"
+                                    type="text" name="coupon" id="coupon" placeholder="Coupon No">
+                                <button type="submit"
+                                    class="absolute right-0 cursor-pointer top-1/2 -translate-y-1/2 px-4 py-1 text-white bg-[#00C23A] rounded-lg text-sm md:text-base">
+                                    OK
+                                </button>
+                            </div>
                 </div>
 
             </div>

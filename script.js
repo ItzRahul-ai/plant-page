@@ -16,12 +16,12 @@ const menuBtn = document.getElementById('menu-btn');
   })
 
   // popup menu
-  setTimeout(()=> {
-const popup = document.getElementById("register");
-popup.style.display = "block";
-  },
-   10000
-)
+//   setTimeout(()=> {
+// const popup = document.getElementById("register");
+// popup.style.display = "block";
+//   },
+//    10000
+// )
 
 // register function
 document.getElementById("register").addEventListener("submit",(e)=> {
@@ -72,3 +72,41 @@ const popup = document.getElementById("register");
 })
 // for animation
 AOS.init();
+
+// Initial values
+let price = 999;
+let products = 1;
+let finalrate = 999;
+
+let productPrice = document.getElementById("productPrice");
+let productCount = document.getElementById("productCount");
+let finalPrice = document.getElementById("finalPrice");
+let print = document.getElementById("print");
+
+// Initial set
+productPrice.innerText = "₹" + price;
+productCount.innerText = products;
+finalPrice.innerText = "₹" + finalrate;
+
+// Increase product quantity
+document.getElementById("increse").addEventListener("click", () => {
+    products++; // Increase quantity
+    finalrate = price * products; 
+    productCount.innerText = products;
+    finalPrice.innerText = "₹" + finalrate;
+    print.innerText = "";
+});
+
+// Decrease product quantity
+document.getElementById("reduce").addEventListener("click", () => {
+    if (products < 1) { 
+        print.innerText = "Insuficent product quantity.";
+        
+    }else {
+        products--;
+        finalrate = price * products;
+        productCount.innerText = products;
+        finalPrice.innerText = "₹" + finalrate;
+        print.innerText = "";
+    }
+});

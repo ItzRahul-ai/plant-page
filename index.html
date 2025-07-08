@@ -378,7 +378,7 @@
                         data-aos="zoom-in">1</div>
                     <span class="font font-bold md:text-3xl text-xl uppercase" data-aos="zoom-out">shopping cart</span>
 
-                    <span data-aos="fade-right"
+                    <span data-aos="fade-left"
                         class="bg-linear-to-r from-[#FFCE66] to-[#00C23A] w-20 h-1 rounded-xl"></span>
                 </div>
 
@@ -408,14 +408,14 @@
 
                     <!-- table head -->
                     <div class="text-[#008F2B] font-bold text-xl grid grid-cols-1 md:grid-cols-5 md:gap-0 gap-5 ">
-                        <h1 class="text-left md:text-center mb-20 md:mb-0 pb-5" data-aos="fade-down">product</h1>
-                        <h1 class="text-left md:text-center md:border-b border-[#00C23A] pb-2" data-aos="zoom-in">price
+                        <h1 class="text-left md:text-center mb-20 md:mb-0 pb-5 uppercase" data-aos="fade-down">product</h1>
+                        <h1 class="text-left md:text-center md:border-b border-[#00C23A] pb-2 uppercase" data-aos="zoom-in">price
                         </h1>
-                        <h1 class="text-left md:text-center md:border-b border-[#00C23A] pb-2" data-aos="zoom-in">sku
+                        <h1 class="text-left md:text-center md:border-b border-[#00C23A] pb-2 uppercase" data-aos="zoom-in">sku
                         </h1>
-                        <h1 class="text-left md:text-center md:border-b border-[#00C23A] pb-2" data-aos="zoom-in">
+                        <h1 class="text-left md:text-center md:border-b border-[#00C23A] pb-2 uppercase" data-aos="zoom-in">
                             quantity</h1>
-                        <h1 class="text-left md:text-center md:border-b border-[#00C23A] pb-2" data-aos="zoom-in">
+                        <h1 class="text-left md:text-center md:border-b border-[#00C23A] pb-2 uppercase" data-aos="zoom-in">
                             subtotal</h1>
                     </div>
 
@@ -435,9 +435,10 @@
                                 <input class="outline-none border border-[#00C23A] rounded-lg pl-4 pr-16 py-1 w-full"
                                     type="text" name="coupon" id="coupon" placeholder="Coupon No">
                                 <button type="submit"
-                                    class="absolute right-0 cursor-pointer top-1/2 -translate-y-1/2 px-4 py-1 text-white bg-[#00C23A] rounded-lg text-sm md:text-base">
+                                    class="absolute right-0 cursor-pointer top-4 -translate-y-1/2 px-4 py-1 text-white bg-[#00C23A] rounded-lg text-sm md:text-base">
                                     OK
                                 </button>
+                                <span class="text-sm text-rose-600 font font-bold" id="couponprint"></span>
                             </div>
 
                         </div>
@@ -468,17 +469,54 @@
 
                     </div>
                      <!-- coupon code box -->
-                        <div class="relative w-4/5 md:hidden block mt-2 mb-5">
+                        <div class="relative w-full md:hidden block mt-2 mb-5">
                                 <input class="outline-none border border-[#00C23A] rounded-lg pl-4 pr-16 py-1 w-full"
                                     type="text" name="coupon" id="coupon" placeholder="Coupon No">
-                                <button type="submit"
-                                    class="absolute right-0 cursor-pointer top-1/2 -translate-y-1/2 px-4 py-1 text-white bg-[#00C23A] rounded-lg text-sm md:text-base">
+                                <button id="couponbtn" type="submit"
+                                    class="absolute right-0 cursor-pointer top-4 -translate-y-1/2 px-4 py-1 text-white bg-[#00C23A] rounded-lg text-sm md:text-base">
                                     OK
                                 </button>
+                                <span class="text-sm text-rose-600 font font-bold" id="couponprint"></span>
                             </div>
                 </div>
 
             </div>
+
+            <!-- cart total -->
+             <div class="px-4 py-2 shadow-sm shadow-[#008F2B] rounded-lg mt-5 md:w-1/2">
+
+                <!-- heading text -->
+                 <h1 class="uppercase font-bold text-3xl border-b border-[#00C23A] pb-2" data-aos="fade-right">Cart total</h1>
+
+                 <!-- subtotal section -->
+                  <div class="grid grid-cols-2 px-4 pb-5">
+
+                    <!-- heading -->
+                     <div class="text-[#008F2B]">
+                        <h1 class="uppercase font-bold text-xl pb-5 mt-10" data-aos="fade-right">subtotal</h1>
+                        <h1 class="uppercase font-bold text-xl pb-5" data-aos="fade-right">total</h1>
+                     </div>
+
+                     <!-- value/price -->
+                      <div class="text-[#00C23A]">
+                        <p class="uppercase font-bold text-xl pb-5 mt-10 text-right" id="subtotal" data-aos="fade-left"></p>
+                        <p class="uppercase font-bold text-xl pb-5 text-right" id="total" data-aos="fade-left"></p>
+                      </div>
+                  </div>
+
+                  <!-- button section -->
+                   <div class="grid grid-cols-2 gap-5 px-4 pb-5">
+
+                    <!-- button 1 -->
+                     <div class="flex justify-center">
+                        <button class="cursor-pointer rounded-full bg-[#FFCE66] px-4 py-1 text-white font-bold text-sm md:text-lg shadow-xl shadow-[#FFCE66]" type="submit" data-aos="fade-up">proceed to checkout</button>
+                     </div>
+                     <!-- button 2 -->
+                      <div class="flex justify-center">
+                        <button class="cursor-pointer rounded-full bg-[#008F2B] px-4 py-1 text-white font-bold text-sm md:text-lg shadow-xl shadow-[#008F2B]" type="submit" data-aos="fade-up">continue shopping</button>
+                      </div>
+                   </div>
+             </div>
 
         </section>
 

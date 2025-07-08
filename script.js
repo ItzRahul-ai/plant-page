@@ -81,32 +81,42 @@ let finalrate = 999;
 let productPrice = document.getElementById("productPrice");
 let productCount = document.getElementById("productCount");
 let finalPrice = document.getElementById("finalPrice");
+let total = document.getElementById("total");
+let subtotal = document.getElementById("subtotal");
 let print = document.getElementById("print");
 
 // Initial set
 productPrice.innerText = "₹" + price;
 productCount.innerText = products;
 finalPrice.innerText = "₹" + finalrate;
+total.innerText = "₹" + finalrate;
+subtotal.innerText = "₹" + price;
+
 
 // Increase product quantity
 document.getElementById("increse").addEventListener("click", () => {
-    products++; // Increase quantity
-    finalrate = price * products; 
+    products++;
+    finalrate = price * products;
     productCount.innerText = products;
     finalPrice.innerText = "₹" + finalrate;
+    total.innerText = "₹" + finalrate;
+    subtotal.innerText = "₹" + finalrate;
     print.innerText = "";
 });
 
 // Decrease product quantity
 document.getElementById("reduce").addEventListener("click", () => {
-    if (products < 1) { 
-        print.innerText = "Insuficent product quantity.";
-        
-    }else {
+    if (products <= 1) {
+        print.innerText = "Minimum 1 product required.";
+    } else {
         products--;
         finalrate = price * products;
         productCount.innerText = products;
         finalPrice.innerText = "₹" + finalrate;
+        total.innerText = "₹" + finalrate;
+    subtotal.innerText = "₹" + finalrate;
         print.innerText = "";
     }
 });
+
+
